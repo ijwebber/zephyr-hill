@@ -2,49 +2,74 @@ import './Slider.css'
 
 export default function Slider(props) {
     let size = props.size / 2.5
-    let colours = ["blue", "pink", "orange", "aqua", "red", "lime", "purple"]
+    let colours = ["blue", "pink", "orange", "aqua", "red", "lime", "purple", "grey", "yellow", "black"]
     let x = 0
-    //const panels = colours.map((item,index) => <Panel size={size} image={item} position={index}></Panel>)
+    const panels = colours.map((item,index) => <Panel size={size} 
+                                                      image={item} 
+                                                      position={index + 1 + props.offset} 
+                                                      total={colours.length} 
+                                                      speed={props.speed}
+                                                ></Panel>
+                    );
     return (
         <div className='Slider' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
-            <Panel size={size} image={"blue"} position={x % 5}></Panel>
-            <Panel size={size} image={"pink"} position={(x + 1) % 5}></Panel>
-            <Panel size={size} image={"red"} position={(x + 2) % 5}></Panel>
-            <Panel size={size} image={"orange"} position={(x + 3) % 5}></Panel>
-            <Panel size={size} image={"aqua"} position={(x + 4) % 5}></Panel>
+            {panels}
         </div>
     );
 }
 
 function Panel(props) {
-    let image = props.image
+    let image = props.image;
+    let size = 0;
+    let pos = 0;
+    let margin = 0;
 
-    let size = 0
-    let pos = 0
-    let zIndex = 0
-    if (props.position == 0) {
+    let position = props.position % props.total;
+    if (position < 0) position = position + props.total;
+
+    let zIndex = 0;
+    let opacity = 1;
+    if (position == 0) {
         size = props.size * 0.5
-        pos = 0
+        opacity = 0
+        zIndex = 0
+        margin = props.size * .25 + "vw"
+    } else if (position == 1) {
+        size = props.size * 0.5
         zIndex = 1
-    } else if (props.position == 1) {
+        margin = props.size * .25 + "vw"
+    } else if (position == 2) {
         size = props.size * 0.75
         pos = (props.size * .25)
         zIndex = 2
-    } else if (props.position == 2) {
+        margin = props.size * .125 + "vw"
+    } else if (position == 3) {
         size = props.size
         pos = props.size * .75
         zIndex = 3
-    } else if (props.position == 3) {
+        margin = "0vw"
+    } else if (position == 4) {
         size = props.size * 0.75
         pos = (props.size * 1.5)
         zIndex = 2
-    } else if (props.position == 4) {
+        margin = props.size * .125 + "vw"
+    } else if (position == 5) {
         size = props.size * 0.5
         pos = props.size * 2
         zIndex = 1
+        margin = props.size * .25 + "vw"
+    } else if (position == 6) {
+        size = props.size * 0.5
+        pos = props.size * 2
+        opacity = 0
+        zIndex = 0
+        margin = props.size * .25 + "vw"
     } else {
-        size = 0
-        pos = 0
+        opacity = 0
+        zIndex = -1
+        size = props.size * 0.5
+        pos = props.size * 2
+        margin = props.size * .25 + "vw"
     }
 
     return (
@@ -53,11 +78,12 @@ function Panel(props) {
             width: size + "vw",
             height: size + "vw",
             transform: "translateX(" + pos + "vw)", 
-            transition: "height .5s, width .5s, transform .5s, margin .5s",
+            transitionProperty: "height, width, transform, margin, opacity",
+            transitionDuration: props.speed + "s",
             position: 'absolute',
-            opacity: 1,
+            opacity: opacity,
             zIndex: zIndex,
-            marginTop: (3 - zIndex) * props.size * .125 + "vw", 
+            marginTop: margin, 
         }}>
 
         </div>
