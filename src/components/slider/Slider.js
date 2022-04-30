@@ -2,12 +2,11 @@ import './Slider.css'
 
 export default function Slider(props) {
     let size = props.size / 2.5
-    let colours = ["blue", "pink", "orange", "aqua", "red", "lime", "purple", "grey", "yellow", "black"]
-    let x = 0
-    const panels = colours.map((item,index) => <Panel size={size} 
+    let images = props.images
+    const panels = images.map((item,index) => <Panel size={size} 
                                                       image={item} 
                                                       position={index + 1 + props.offset} 
-                                                      total={colours.length} 
+                                                      total={images.length} 
                                                       speed={props.speed}
                                                 ></Panel>
                     );
@@ -29,36 +28,36 @@ function Panel(props) {
 
     let zIndex = 0;
     let opacity = 1;
-    if (position == 0) {
+    if (position === 0) {
         size = props.size * 0.5
         opacity = 0
         zIndex = 0
         margin = props.size * .25 + "vw"
-    } else if (position == 1) {
+    } else if (position === 1) {
         size = props.size * 0.5
         zIndex = 1
         margin = props.size * .25 + "vw"
-    } else if (position == 2) {
+    } else if (position === 2) {
         size = props.size * 0.75
         pos = (props.size * .25)
         zIndex = 2
         margin = props.size * .125 + "vw"
-    } else if (position == 3) {
+    } else if (position === 3) {
         size = props.size
         pos = props.size * .75
         zIndex = 3
         margin = "0vw"
-    } else if (position == 4) {
+    } else if (position === 4) {
         size = props.size * 0.75
         pos = (props.size * 1.5)
         zIndex = 2
         margin = props.size * .125 + "vw"
-    } else if (position == 5) {
+    } else if (position === 5) {
         size = props.size * 0.5
         pos = props.size * 2
         zIndex = 1
         margin = props.size * .25 + "vw"
-    } else if (position == 6) {
+    } else if (position === 6) {
         size = props.size * 0.5
         pos = props.size * 2
         opacity = 0
@@ -85,7 +84,7 @@ function Panel(props) {
             zIndex: zIndex,
             marginTop: margin, 
         }}>
-
+            <img style={{width: "100%", height: "100%"}}src={image}></img>
         </div>
     );
 }
