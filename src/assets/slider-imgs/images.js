@@ -11,13 +11,13 @@ import Image9 from './time-has-a-gift-of-tears.png';
 
 //TODO items should be changed to objects with spotify link
 export default [
-    Image1,
-    Image2,
-    Image3,
-    Image4,
-    Image5,
-    Image6,
-    Image7,
-    Image8,
-    Image9
+    {"image": Image1, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image2, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image3, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image4, "embed": "2E82L2w1fY4r1yLT1LBxLC"},
+    {"image": Image5, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image6, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image7, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image8, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image9, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
 ]

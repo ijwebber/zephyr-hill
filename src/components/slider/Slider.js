@@ -4,7 +4,7 @@ export default function Slider(props) {
     let size = props.size / 2.5
     let images = props.images
     const panels = images.map((item,index) => <Panel size={size} 
-                                                      image={item} 
+                                                      image={item.image} 
                                                       position={index + 1 + props.offset} 
                                                       total={images.length} 
                                                       speed={props.speed}
