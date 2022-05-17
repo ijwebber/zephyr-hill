@@ -1,0 +1,80 @@
+
+.Home {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -100;
+}
+
+.Home .home-left {
+    width: 38vw;
+    height: 100vh;
+    background-image: url(../../assets/home-imgs/hugh_with_gtr.jpg);
+    background-repeat: no-repeat;
+    background-position: -26vw 0vw;
+    background-size: max(64vw, 64vh) max(64vw, 64vh);
+    box-shadow: 3px -8px 10px 1px grey;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.Home .home-right {
+    width: 62vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    float: right;
+    cursor: pointer;
+}
+
+.Home .home-right:before {
+    content: "";
+    background-image: url(../../assets/home-imgs/hills.jpg);
+    background-repeat: no-repeat;
+    background-position: -10vw -20vw;
+    background-size: 85vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    opacity: .54;
+}
+
+.Home .home-right .logo {
+    width: 30vw;
+    position: relative;
+    margin: auto;
+    margin-top: -5vh;
+    cursor: pointer;
+}
+
+.Home .home-right .navbar {
+    width: 100%;
+    position: relative;
+    margin-top: -5vh;
+    cursor: pointer;
+}
+
+.Home .navbar .option {
+    margin: 0;
+    padding: 0 1vw;
+    font-size: 2vw;
+    display: inline-block;
+    color: #707070;
+    font-weight: bolder;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.Home .navbar .option:hover {
+    color: black;
+    
+}
+
+
+
+

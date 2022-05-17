@@ -9,7 +9,7 @@ import Image8 from './say-youll-believe.png';
 import Image9 from './time-has-a-gift-of-tears.png';
 
 
-//TODO items should be changed to objects with spotify link
+//TODO spotify links need to be correct
 export default [
     {"image": Image1, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
     {"image": Image2, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
