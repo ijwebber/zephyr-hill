@@ -8,6 +8,7 @@ function Music(props) {
     console.log(offset)
     return (
         <div className='Music'>
+            <h1 className='title'>SONG WRITING CREDITS & COLLABORATIONS</h1>
             <Slider size={65} offset={offset} speed={.75} images={sliderImages}></Slider>
             <iframe style={{borderRadius: "12px"}} src={"https://open.spotify.com/embed/track/" + sliderImages[(2 - offset) % sliderImages.length].embed + "?utm_source=generator&theme=0"} width="30%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             <button style={{fontSize: "50px"}} onClick={() => setOffset(offset + 1)}>{"<"}</button>

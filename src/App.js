@@ -9,7 +9,7 @@ function App() {
       <Page>
         <Home></Home>
       </Page>
-      <Page bg="black">
+      <Page bg="#222222">
         <Music></Music>
       </Page>
     </div>

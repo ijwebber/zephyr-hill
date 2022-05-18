@@ -1,0 +1,12 @@
+.Music .title {
+    color: white;
+    font-weight: 600;
+    padding-top: 3%;
+    font-size: 2.5vw;
+    display: block;
+}
+
+.Music .Slider {
+    margin: auto;
+    margin-top: 3%;
+}

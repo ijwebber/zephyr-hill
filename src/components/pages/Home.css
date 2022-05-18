@@ -7,8 +7,8 @@
 }
 
 .Home .home-left {
-    width: 38vw;
-    height: 100vh;
+    width: 38%;
+    height: 100%;
     background-image: url(../../assets/home-imgs/hugh_with_gtr.jpg);
     background-repeat: no-repeat;
     background-position: -26vw 0vw;
@@ -20,12 +20,11 @@
 }
 
 .Home .home-right {
-    width: 62vw;
-    height: 100vh;
+    width: 62%;
+    height: 100%;
     position: relative;
     z-index: -1;
     float: right;
-    cursor: pointer;
 }
 
 .Home .home-right:before {
@@ -68,13 +67,26 @@
     position: relative;
     z-index: 100;
     cursor: pointer;
+    transition: color .3s;
 }
 
 .Home .navbar .option:hover {
-    color: black;
-    
+    color: rgb(60, 60, 60);
 }
 
+.Home .home-right .about {
+    color: #772D2D;
+    font-weight: 600;
+    font-size: 2.2vw;
+    padding: 0 5vw;
+    margin-top: 5vh;
+}
+
+.Home .home-right .soundbetter {
+    width: 20%;
+    margin-top: 10vh;
+    cursor: pointer;
+}
 
 
 

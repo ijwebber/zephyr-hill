@@ -1,4 +1,7 @@
 .Page {
-    height: 100vh;
+    /* TODO update all items on pages with corrected height (check if it fixes double scroll bar glitch when height is small) */
+    /* Might require a react write of lots of ratios ,e.g. if height is half the width base it on the width else do something else*/
+    /* that might work but really need to adjust other stuff*/
+    height: max(min(100vh, 56.25vw), 56.25vw);
     width: 100vw;
 }
