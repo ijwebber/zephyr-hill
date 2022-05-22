@@ -1,0 +1,17 @@
+.Slider .arrow {
+    color: black;
+    text-align: center;
+    width: 3vw;
+    height: 26vw;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Slider .main {
+    display: inline-block;
+    margin: auto 2vw;
+}
+
+.Slider .arrow.left {
+    transform: rotate(180deg);
+}

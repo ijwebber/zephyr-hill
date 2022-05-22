@@ -10,6 +10,7 @@ function Home(props) {
             <div className='home-left'></div>
             <div className='home-right'>
                 <img className='logo' src={imgLogo}></img>
+                {/*TODO add the scroll part (look at ivory games)*/}
                 <div className='navbar'>
                     {navbarOptions.map((item) => <p className='option'>{item}</p>)}
                 </div>

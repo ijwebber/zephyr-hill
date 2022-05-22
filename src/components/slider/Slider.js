@@ -1,4 +1,5 @@
 import './Slider.css'
+import svgArrow from '../../assets/slider-imgs/Arrow.svg'
 
 export default function Slider(props) {
     let size = props.size / 2.5
@@ -11,8 +12,13 @@ export default function Slider(props) {
                                                 ></Panel>
                     );
     return (
-        <div className='Slider' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
-            {panels}
+        <div className='Slider'>
+            {/*TODO add hover effect to the arrows (make it another component)*/ }
+            <img src={svgArrow} className='arrow left' onClick={props.clickLeft}></img>
+            <div className='main' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
+                {panels}        
+            </div>
+            <img src={svgArrow} className='arrow right' onClick={props.clickRight}></img>
         </div>
     );
 }
