@@ -8,16 +8,14 @@ import Image7 from './snowblind-cover.jpg';
 import Image8 from './say-youll-believe.png';
 import Image9 from './time-has-a-gift-of-tears.png';
 
-
-//TODO spotify links need to be correct
 export default [
-    {"image": Image1, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
-    {"image": Image2, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
+    {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},
     {"image": Image3, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
     {"image": Image4, "embed": "2E82L2w1fY4r1yLT1LBxLC"},
-    {"image": Image5, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
-    {"image": Image6, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
-    {"image": Image7, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
-    {"image": Image8, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
-    {"image": Image9, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
+    {"image": Image5, "embed": "4vu5gj1c1iVl8bn79XgIkP"},
+    {"image": Image6, "embed": "4PMuN3Pd6m11qyNmXWsT7V"},
+    {"image": Image7, "embed": "39pIEdsVE2d5MOW14jM7at"},
+    {"image": Image8, "embed": "4ER7bWK1Sq5I59qidf41kb"},
+    {"image": Image9, "embed": "52p5ylbdqvshawzhGgU30I"},
 ]

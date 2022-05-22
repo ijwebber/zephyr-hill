@@ -5,7 +5,7 @@ function Page(props) {
     let bg = props.bg === null ? "white" : props.bg;
 
     return (
-        <div className="Page" style={{backgroundColor: bg}}>
+        <div className="Page" style={{backgroundColor: bg}} name="Page">
             {props.children}
         </div>
     );

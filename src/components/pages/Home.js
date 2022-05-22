@@ -4,15 +4,17 @@ import imgSoundBetter from '../../assets/home-imgs/SoundBetter.svg';
 
 function Home(props) {
     const navbarOptions = ["MUSIC", "REVIEWS", "CONTACT", "BLOG"]
+    const getHeight = () => document.getElementsByName("Page")[0].offsetHeight;
+    const scrollTo = index => {window.scroll({top: getHeight() * (index + 1), left: 0, behavior: 'smooth' })};
+    const navbarObjs = navbarOptions.map((item, index) => <p className='option' onClick={() => scrollTo(index)}>{item}</p>)
 
     return (
         <div className='Home'>
             <div className='home-left'></div>
             <div className='home-right'>
                 <img className='logo' src={imgLogo}></img>
-                {/*TODO add the scroll part (look at ivory games)*/}
                 <div className='navbar'>
-                    {navbarOptions.map((item) => <p className='option'>{item}</p>)}
+                    {navbarObjs}
                 </div>
                 <div className='about'>
                     {"I'm a songwriter & creative collaborator who loves writing great songs with great singers".toUpperCase()}
