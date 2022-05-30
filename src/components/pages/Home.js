@@ -12,14 +12,14 @@ function Home(props) {
         <div className='Home'>
             <div className='home-left'></div>
             <div className='home-right'>
-                <img className='logo' src={imgLogo}></img>
+                <img className='logo' src={imgLogo} alt="Logo"></img>
                 <div className='navbar'>
                     {navbarObjs}
                 </div>
                 <div className='about'>
                     {"I'm a songwriter & creative collaborator who loves writing great songs with great singers".toUpperCase()}
                 </div>
-                <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank"><img src={imgSoundBetter} className="soundbetter"></img></a>
+                <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank" rel="noreferrer"><img src={imgSoundBetter} className="soundbetter" alt="Soundbetter Link"></img></a>
             </div> 
         </div>
     );

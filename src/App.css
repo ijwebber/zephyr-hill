@@ -1,3 +1,14 @@
 .App {
   text-align: center;
 }
+
+.Social {
+  position: fixed;
+  z-index: 10;
+  top: 25vh;
+  right: 1vw;
+  width: 5vw;
+  height: 50vh;
+  background-color: white;
+  border-radius: 5vw;
+}

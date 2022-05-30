@@ -1,0 +1,12 @@
+.Contact {
+    height: 100%;
+    width: 100%;
+}
+
+.Contact .img-bg {
+    width: 90%;
+    opacity: 0.05;
+    position: absolute;
+    left: 5%;
+    z-index: -10;
+}
