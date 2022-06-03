@@ -1,4 +1,5 @@
 import './Slider.css'
+import React from 'react';
 import svgArrow from '../../assets/slider-imgs/Arrow.svg'
 
 export default function Slider(props) {
@@ -14,11 +15,11 @@ export default function Slider(props) {
     return (
         <div className='Slider'>
             {/*TODO add hover effect to the arrows (make it another component) double check dad likes the arrows*/ }
-            <img src={svgArrow} className='arrow left' onClick={props.clickLeft}></img>
+            <img src={svgArrow} className='arrow left' onClick={props.clickLeft} alt="Left Arrow"></img>
             <div className='main' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
                 {panels}        
             </div>
-            <img src={svgArrow} className='arrow right' onClick={props.clickRight}></img>
+            <img src={svgArrow} className='arrow right' onClick={props.clickRight} alt="Right Arrow"></img>
         </div>
     );
 }
@@ -90,7 +91,7 @@ function Panel(props) {
             zIndex: zIndex,
             marginTop: margin, 
         }}>
-            <img style={{width: "100%", height: "100%"}}src={image}></img>
+            <img style={{width: "100%", height: "100%"}} src={image} alt="Album Artwork"></img>
         </div>
     );
 }

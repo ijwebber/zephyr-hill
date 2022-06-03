@@ -1,9 +1,11 @@
+import React from 'react';
 import './App.css';
 import Page from './components/pages/Page';
 import Home from './components/pages/Home';
 import Music from './components/pages/Music';
 import Reviews from './components/pages/Reviews';
 import Contact from './components/pages/Contact';
+
 //import Social from './components/social/Social';
 
 function App() {

@@ -1,6 +1,9 @@
 import './Home.css';
+import React from 'react';
 import imgLogo from '../../assets/home-imgs/ZHMLogo.png';
 import imgSoundBetter from '../../assets/home-imgs/SoundBetter.svg';
+
+//TODO make the stuff on right vertically aligned nicely
 
 function Home(props) {
     const navbarOptions = ["MUSIC", "REVIEWS", "CONTACT", "BLOG"]
@@ -19,7 +22,7 @@ function Home(props) {
                 <div className='about'>
                     {"I'm a songwriter & creative collaborator who loves writing great songs with great singers".toUpperCase()}
                 </div>
-                <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank" rel="noreferrer"><img src={imgSoundBetter} className="soundbetter" alt="Soundbetter Link"></img></a>
+                <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank" rel="noreferrer noopener"><img src={imgSoundBetter} className="soundbetter" alt="Soundbetter Link"></img></a>
             </div> 
         </div>
     );

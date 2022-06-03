@@ -44,3 +44,75 @@
     width: 100%;
     background-color: white;
 }
+
+/* TESTIMONIALS */
+
+.carousel-wrapper {
+    margin-top: 20vh;
+    width: 75vw;
+    margin-left: 12.5vw;
+    color: #454545 !important;
+  }
+  
+  .slider-wrapper {
+    width: 100vw !important;
+    margin-left: -12.5vw !important;
+  }
+  
+  .carousel .slide {
+    background: none !important;
+  }
+  
+  .testimonial {
+    width: 100%;
+    padding: 0 15%;
+    margin: auto;
+  }
+  
+  .testimonial .text {
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: left;
+    font-style: italic;
+  }
+  
+  .testimonial .author {
+    font-size: 2vw;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  
+  .control-arrow {
+    background: none !important;
+  }
+  
+  .control-arrow:before {
+    border-top: 24px solid transparent !important;
+    border-bottom: 24px solid transparent !important;
+  }
+  
+  .control-next.control-arrow:before {
+    border-left: 10px solid black !important;
+  }
+  
+  .control-prev.control-arrow:before {
+    border-right: 10px solid black !important;
+  }
+  
+  @media (max-width: 1200px) {
+    .carousel-wrapper {
+      width: 90vw;
+      margin-left: 5vw;
+    }
+    .slider-wrapper {
+      width: 100vw !important;
+      margin-left: -5vw !important;
+    }
+  }
+  
+  .testimonials {
+    text-align: center;
+    margin-top: 16px;
+  }

@@ -8,7 +8,7 @@ import Image7 from './snowblind-cover.jpg';
 import Image8 from './say-youll-believe.png';
 import Image9 from './time-has-a-gift-of-tears.png';
 
-export default [
+const images = [
     {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
     {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},
     {"image": Image3, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
@@ -19,3 +19,5 @@ export default [
     {"image": Image8, "embed": "4ER7bWK1Sq5I59qidf41kb"},
     {"image": Image9, "embed": "52p5ylbdqvshawzhGgU30I"},
 ]
+
+export default images;
