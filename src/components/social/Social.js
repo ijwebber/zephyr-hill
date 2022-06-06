@@ -5,7 +5,7 @@ function Social() {
 
     return (
         <div className='Social'>
-            {socials.map(() => <div className='icon'></div>)}
+            {socials.map((item) => <div className='icon' key={item + "Icon"}></div>)}
         </div>
     );
 }

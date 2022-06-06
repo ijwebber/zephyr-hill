@@ -34,7 +34,7 @@
 .contact-form .title {
     font-size: 5vw;
     font-weight: 600;
-    color: #79252F;
+    color: #344c80;
     margin-bottom: 1vw;
 }
 
@@ -88,18 +88,18 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color .3s;
-    background-color: #79252F;
+    background-color: #344c80;
     border: none;
     border-radius: 32px;
     font-family: 'Montserrat';
 }
 
 .contact-form .submit:hover {
-    background-color: #a5444f;
+    background-color: #5d7ab8;
 }
 
 .contact-form .submit:active {
-    color: #79252F;
+    color: #344c80;
 }
 
 .Contact .text {

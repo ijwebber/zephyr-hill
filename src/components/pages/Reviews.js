@@ -15,9 +15,9 @@ function Testimonial(props) {
     const classString = "testimonial " + (active ? "active" : "");
 
     return (
-        <div class={classString}>
-            <p class="text">{props.text}</p>
-            <p class="author">{props.author}</p>
+        <div className={classString}>
+            <p className="text">{props.text}</p>
+            <p className="author">{props.author}</p>
         </div>
     );
 }
@@ -25,9 +25,10 @@ function Testimonial(props) {
 function MyCarousel() {
     return (
         <div className="testimonials">
-            <div class="carousel-wrapper">
+            <div className="carousel-wrapper">
                 <Carousel infiniteLoop useKeyboardArrows autoPlay interval={5000} transitionTime={500} showStatus={false} showIndicators={false} centerMode={true} showThumbs={false}>
                     {reviews.map((item, index) => <Testimonial 
+                                                        key={"testimonial"+index}
                                                         active={index === 0 ? true : false}
                                                         text={item.text}
                                                         author={item.author}

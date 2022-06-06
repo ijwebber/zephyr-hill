@@ -3,17 +3,37 @@ import './Contact.css';
 import imgLogoStripped from '../../assets/contact-imgs/LogoStripped.png'
 import emailjs from 'emailjs-com';
 
+function checkValidEntry(info) {
+    let name = info[0].value
+    let email = info[1].value
+    let message = info[2].value
+    
+    if (name === "") {
+        return false
+    } else if (email === "") {
+        return false
+    } else if ((message) === "") {
+        return false
+    } else {
+        return true;
+    }
+    
+}
+
 function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_48prp2r', 'template_gao1a7v', e.target, 'NHL-4nqYyeFLs9hnN')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-
-        e.target.reset();
+        if (checkValidEntry(e.target)) {
+            emailjs.sendForm('service_48prp2r', 'template_gao1a7v', e.target, 'NHL-4nqYyeFLs9hnN')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            e.target.reset();
+        } else {
+            console.log("Invalid")
+        }
     }
 
     return (

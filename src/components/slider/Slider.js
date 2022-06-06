@@ -10,6 +10,7 @@ export default function Slider(props) {
                                                       position={index + 1 + props.offset} 
                                                       total={images.length} 
                                                       speed={props.speed}
+                                                      key={"panel" + index}
                                                 ></Panel>
                     );
     return (

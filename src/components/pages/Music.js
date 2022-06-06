@@ -18,7 +18,7 @@ function Music(props) {
         <div className='Music'>
             <h1 className='title'>SONGWRITING CREDITS & COLLABORATIONS</h1>
             <Slider size={65} offset={offset} speed={.75} images={sliderImages} clickLeft={clickLeft} clickRight={clickRight} ></Slider>
-            <iframe title="Spotify Player" style={{borderRadius: "12px"}} src={"https://open.spotify.com/embed/track/" + sliderImages[Math.abs(2 - offset) % sliderImages.length].embed + "?utm_source=generator&theme=0"} width="30%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe title="Spotify Player" style={{borderRadius: "12px"}} src={"https://open.spotify.com/embed/track/" + sliderImages[Math.abs(2 - offset) % sliderImages.length].embed + "?utm_source=generator&theme=0"} width="30%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
     );
 }
