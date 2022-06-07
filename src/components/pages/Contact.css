@@ -80,6 +80,7 @@
     padding: 12px 1vw;
     transition: border-bottom .5s;
     font-family: 'Montserrat';
+    resize: none;
 }
 
 .contact-form .submit {
