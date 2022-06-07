@@ -4,8 +4,6 @@ import { useState } from 'react';
 import Slider from '../slider/Slider';
 import sliderImages from '../../assets/slider-imgs/images';
 
-//TODO make sure vertical allignment is good
-
 function Music(props) {
     const [offset, setOffset] = useState(0);
     const clickLeft = () => setOffset(offset + 1);

@@ -15,7 +15,7 @@ export default function Slider(props) {
                     );
     return (
         <div className='Slider'>
-            {/*TODO add hover effect to the arrows (make it another component) double check dad likes the arrows*/ }
+            {/*TODO change the arrows*/ }
             <img src={svgArrow} className='arrow left' onClick={props.clickLeft} alt="Left Arrow"></img>
             <div className='main' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
                 {panels}        

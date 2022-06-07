@@ -7,9 +7,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import reviews from '../reviews/reviews';
 
-// TODO add quotes
-// TODO try and center
-
 function Testimonial(props) {
     const active = props.active != null ? props.active : false;
     const classString = "testimonial " + (active ? "active" : "");

@@ -1,8 +1,40 @@
+.Social {
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 64px;
+    right: 1vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Social .main {
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .Social .icon {
-    background-color: blue;
-    width: 32px;
+    background-color: white;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.Social .icon:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.Social img {
     height: 32px;
-    padding: 32px 32px;
-    margin: auto;
-    
 }
