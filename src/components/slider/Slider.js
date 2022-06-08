@@ -12,11 +12,11 @@ export default function Slider(props) {
                                                       total={images.length} 
                                                       speed={props.speed}
                                                       key={"panel" + index}
+                                                      moveSlider={props.moveSlider}
                                                 ></Panel>
                     );
     return (
         <div className='Slider'>
-            {/*TODO change the arrows*/ }
             <img src={svgLeftArrow} className='arrow left' onClick={props.clickLeft} alt="Left Arrow"></img>
             <div className='main' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
                 {panels}        
@@ -34,6 +34,11 @@ function Panel(props) {
 
     let position = props.position % props.total;
     if (position < 0) position = position + props.total;
+
+    const imageClicked = () => {
+        const n = position - 3
+        props.moveSlider(n)
+    }
 
     let zIndex = 0;
     let opacity = 1;
@@ -92,7 +97,10 @@ function Panel(props) {
             opacity: opacity,
             zIndex: zIndex,
             marginTop: margin, 
-        }}>
+            cursor: 'pointer',
+        }}
+        onClick={imageClicked}
+        >
             <img style={{width: "100%", height: "100%"}} src={image} alt="Album Artwork"></img>
         </div>
     );
