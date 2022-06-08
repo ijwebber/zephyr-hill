@@ -17,8 +17,8 @@ function Social() {
             <div className='main'>
                 <div className='container'>
                     {socials.map((item) =>  <a href={item[2]} target="_blank" rel="noreferrer noopener">
-                                                <div className='icon' key={item[0] + "Icon"} alt={item[0]}>
-                                                    <img src={item[1]}></img>
+                                                <div className='icon' key={item[0] + "Icon"}>
+                                                    <img src={item[1]} alt={item[0]}></img>
                                                 </div>
                                             </a>    
                                             )}

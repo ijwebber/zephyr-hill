@@ -1,6 +1,7 @@
 import './Slider.css'
 import React from 'react';
-import svgArrow from '../../assets/slider-imgs/Arrow.svg'
+import svgRightArrow from '../../assets/slider-imgs/WhiteArrowRight.svg'
+import svgLeftArrow from '../../assets/slider-imgs/WhiteArrowLeft.svg'
 
 export default function Slider(props) {
     let size = props.size / 2.5
@@ -16,11 +17,11 @@ export default function Slider(props) {
     return (
         <div className='Slider'>
             {/*TODO change the arrows*/ }
-            <img src={svgArrow} className='arrow left' onClick={props.clickLeft} alt="Left Arrow"></img>
+            <img src={svgLeftArrow} className='arrow left' onClick={props.clickLeft} alt="Left Arrow"></img>
             <div className='main' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
                 {panels}        
             </div>
-            <img src={svgArrow} className='arrow right' onClick={props.clickRight} alt="Right Arrow"></img>
+            <img src={svgRightArrow} className='arrow right' onClick={props.clickRight} alt="Right Arrow"></img>
         </div>
     );
 }

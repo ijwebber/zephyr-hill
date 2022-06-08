@@ -125,21 +125,8 @@
   bottom: 15%;
 }
 
-.quote {
-  position: absolute;
-  z-index: 3;
-  font-size: 15vw;
-  font-weight: 600;
-}
-
-.quote.quote-left {
-  color: #6f6f6f;
-  left: 2vw;
-  top: -10vh
-}
-
-.quote.quote-right {
-  color: #6f6f6f;
-  right: 2vw;
-  top: 10vh;
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

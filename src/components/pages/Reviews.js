@@ -23,7 +23,6 @@ function MyCarousel() {
     return (
         <div className="testimonials">
             <div className="carousel-wrapper">
-                <div className='quote quote-left'>{"\u201C"}</div>
                 <Carousel infiniteLoop useKeyboardArrows autoPlay interval={5000} transitionTime={500} showStatus={false} showIndicators={false} centerMode={true} showThumbs={false}>
                     {reviews.map((item, index) =>   <Testimonial 
                                                         key={"testimonial"+index}
@@ -33,7 +32,6 @@ function MyCarousel() {
                                                     >
                                                     </Testimonial>)}
                 </Carousel>
-                <div className='quote quote-right'>{"\u201D"}</div>
             </div>
         </div>
     );
