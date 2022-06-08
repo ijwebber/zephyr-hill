@@ -1,30 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import Page from './components/pages/Page';
-import Home from './components/pages/Home';
-import Music from './components/pages/Music';
-import Reviews from './components/pages/Reviews';
-import Contact from './components/pages/Contact';
-
-import Social from './components/social/Social';
+import Browser from './devices/Browser';
+import Mobile from './devices/Mobile';
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight)
+  useEffect(() => {
+      function reportWindowSize() {
+          setWindowWidth(window.innerWidth)
+          setWindowHeight(window.innerHeight)
+      }
+      // Trigger this function on resize
+      window.addEventListener('resize', reportWindowSize)
+      //  Cleanup for componentWillUnmount
+      return () => window.removeEventListener('resize', reportWindowSize)
+  }, [])
+
+  const useMobile = () => {
+    if (windowWidth < windowHeight) {
+      return true;
+    } else if (windowWidth < 500) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  const site = useMobile() ? <Mobile></Mobile> : <Browser></Browser>
+
   return (
-    <div className="App">
-      <Page>
-        <Home></Home>
-      </Page>
-      <Page bg="#222222">
-        <Music></Music>
-      </Page>
-      <Page>
-        <Reviews></Reviews>
-      </Page>
-      <Page>
-        <Contact></Contact>
-      </Page>
-      <Social></Social>
-    </div>
+    <>{site}</>
   );
 }
 
