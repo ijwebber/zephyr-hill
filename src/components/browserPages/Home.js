@@ -3,8 +3,6 @@ import React from 'react';
 import imgLogo from '../../assets/home-imgs/ZHMLogo.png';
 import imgSoundBetter from '../../assets/home-imgs/SoundBetter.svg';
 
-//TODO make the stuff on right vertically aligned nicely
-
 function Home(props) {
     const navbarOptions = ["MUSIC", "REVIEWS", "CONTACT"]
     const getHeight = () => document.getElementsByName("Page")[0].offsetHeight;

@@ -1,17 +1,26 @@
 import React from "react";
 
-import Page from '../components/browserPages/Page';
-import Home from '../components/browserPages/Home';
-import Music from '../components/browserPages/Music';
-import Reviews from '../components/browserPages/Reviews';
-import Contact from '../components/browserPages/Contact';
-
-import Social from '../components/social/Social';
+import Page from '../components/mobilePages/Page';
+import Home from '../components/mobilePages/Home';
+import Reviews from "../components/mobilePages/Reviews";
+//import Music from '../components/mobilePages/Music';
+//import Contact from '../components/mobilePages/Contact';
 
 function Mobile() {
     return (
         <>
-            <div>Mobile Site coming soon!</div>
+            <Page>
+                <Home></Home>
+            </Page>
+            <Page bg="#222222">
+
+            </Page>
+            <Page bg="blue">
+                <Reviews></Reviews>
+            </Page>
+            <Page bg="red">
+
+            </Page>
         </>
     );
 }
