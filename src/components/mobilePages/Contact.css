@@ -35,7 +35,7 @@
 }
   
 .mobileContact .contact-form .title {
-    font-size: 7vh;
+    font-size: 10vw;
     font-weight: 600;
     color: #344c80;
     margin-bottom: 10vh;
@@ -45,7 +45,7 @@
     font-family: 'Montserrat';
     width: 100%;
     height: 3vw;
-    font-size: 2vh;
+    font-size: 4.5vw;
     margin-bottom: 2vw;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.082);
@@ -74,7 +74,7 @@
 
 .mobileContact .contact-form textarea {
     width: 100%;
-    font-size: 2vh;
+    font-size: 4.5vw;
     border: none;
     background-color: rgba(255, 255, 255, 0.082);
     outline: none;
@@ -88,7 +88,7 @@
 
 .mobileContact .contact-form .submit {
     color: white;
-    font-size: 2vh;
+    font-size: 5vw;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color .3s;

@@ -13,15 +13,14 @@ export default function Slider(props) {
                                                       speed={props.speed}
                                                       key={"panel" + index}
                                                       moveSlider={props.moveSlider}
-                                                ></Panel>
-                    );
+                                            ></Panel>);
     return (
         <div className='Slider'>
-            <img src={svgLeftArrow} className='arrow left' onClick={props.clickLeft} alt="Left Arrow"></img>
+            <img src={svgLeftArrow} className='arrow left' style={{height: size + "vw"}} onClick={props.clickLeft} alt="Left Arrow"></img>
             <div className='main' style={{height: size + "vw", width: size * 2.5 + "vw"}}>
                 {panels}        
             </div>
-            <img src={svgRightArrow} className='arrow right' onClick={props.clickRight} alt="Right Arrow"></img>
+            <img src={svgRightArrow} className='arrow right' style={{height: size + "vw"}} onClick={props.clickRight} alt="Right Arrow"></img>
         </div>
     );
 }

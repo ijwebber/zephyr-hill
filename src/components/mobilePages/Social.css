@@ -1,0 +1,39 @@
+.mobileSocial .icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+}
+
+.mobileSocial {
+    position: fixed;
+    z-index: 12;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileSocial .container {
+    position: relative;
+    z-index: 12;
+}
+
+.mobileSocial img {
+    position: relative;
+    height: 32px;
+    z-index: 12;
+}
+
+.mobileSocial .main {
+    position: relative;
+    z-index: 12;
+    display: inline-block;
+    height: 64px;
+    margin-top: 2vh;
+    background-color: rgba(255, 255, 255, 0.577);
+    border-radius: 5vw;
+}

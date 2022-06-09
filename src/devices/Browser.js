@@ -6,7 +6,7 @@ import Music from '../components/browserPages/Music';
 import Reviews from '../components/browserPages/Reviews';
 import Contact from '../components/browserPages/Contact';
 
-import Social from '../components/social/Social';
+import Social from '../components/browserPages/Social';
 
 function Browser() {
     return (

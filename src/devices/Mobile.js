@@ -6,10 +6,12 @@ import Reviews from "../components/mobilePages/Reviews";
 import Music from '../components/mobilePages/Music';
 import Contact from '../components/mobilePages/Contact';
 import ContactAbout from "../components/mobilePages/ContactAbout";
+import Social from "../components/mobilePages/Social";
 
 function Mobile() {
     return (
         <>
+            <Social></Social>
             <Page>
                 <Home></Home>
             </Page>
@@ -28,5 +30,7 @@ function Mobile() {
         </>
     );
 }
+
+
 
 export default Mobile;

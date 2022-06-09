@@ -16,7 +16,7 @@ function Music(props) {
     return (
         <div className='mobileMusic'>
             <h1 className='title'>SONGWRITING CREDITS & COLLABORATIONS</h1>
-            <Slider size={65} offset={offset} speed={.75} images={sliderImages} clickLeft={clickLeft} clickRight={clickRight} moveSlider={changeOffset} ></Slider>
+            <Slider size={80} offset={offset} speed={.75} images={sliderImages} clickLeft={clickLeft} clickRight={clickRight} moveSlider={changeOffset} ></Slider>
             <iframe 
                 title="Spotify Player" 
                 style={{borderRadius: "12px"}} 
