@@ -1,0 +1,15 @@
+.mobileMusic .title {
+    color: white;
+    font-weight: 600;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    font-size: 3vh;
+    display: block;
+}
+
+.mobileMusic .Slider {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

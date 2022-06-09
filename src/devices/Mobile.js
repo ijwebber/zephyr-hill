@@ -3,7 +3,7 @@ import React from "react";
 import Page from '../components/mobilePages/Page';
 import Home from '../components/mobilePages/Home';
 import Reviews from "../components/mobilePages/Reviews";
-//import Music from '../components/mobilePages/Music';
+import Music from '../components/mobilePages/Music';
 import Contact from '../components/mobilePages/Contact';
 import ContactAbout from "../components/mobilePages/ContactAbout";
 
@@ -14,9 +14,8 @@ function Mobile() {
                 <Home></Home>
             </Page>
             <Page bg="#222222">
-
+                <Music></Music>
             </Page>
-            
             <Page>
                 <Reviews></Reviews>
             </Page>
