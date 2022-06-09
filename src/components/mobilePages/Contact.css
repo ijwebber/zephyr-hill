@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-.Contact {
+.mobileContact {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Contact .form {
+.mobileContact .form {
     position: relative;
     z-index: 1;
-    width: 35vw;
+    width: 80vw;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 12.5vw;
+    flex-direction: column;
 }
-.Contact .img-bg {
+.mobileContact .img-bg {
     width: 90%;
     opacity: 0.05;
     position: absolute;
@@ -24,25 +27,25 @@
     z-index: -10;
 }
 
-.Contact .contact-form {
+.mobileContact .contact-form {
     width: 100%;
     text-align: center;
     margin-bottom: 1vw;
     font-family: 'Montserrat';
 }
   
-.Contact .contact-form .title {
-    font-size: 5vw;
+.mobileContact .contact-form .title {
+    font-size: 7vh;
     font-weight: 600;
     color: #344c80;
-    margin-bottom: 1vw;
+    margin-bottom: 10vh;
 }
 
-.Contact .contact-form .enter-box input {
+.mobileContact .contact-form .enter-box input {
     font-family: 'Montserrat';
     width: 100%;
     height: 3vw;
-    font-size: 1.3vw;
+    font-size: 2vh;
     margin-bottom: 2vw;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.082);
@@ -53,25 +56,25 @@
     transition: border-bottom .5s;
 }
 
-.Contact .contact-form .enter-box input:active {
+.mobileContact .contact-form .enter-box input:active {
     border-bottom: 2px #6e8bca solid;
 }
 
-.Contact .contact-form .enter-box input:focus {
+.mobileContact .contact-form .enter-box input:focus {
     border-bottom: 2px #6e8bca solid;
 }
 
-.Contact .contact-form textarea:active {
+.mobileContact .contact-form textarea:active {
     border-bottom: 2px #6e8bca solid;
 }
 
-.Contact .contact-form textarea:focus {
+.mobileContact .contact-form textarea:focus {
     border-bottom: 2px #6e8bca solid;
 }
 
-.Contact .contact-form textarea {
+.mobileContact .contact-form textarea {
     width: 100%;
-    font-size: 1.3vw;
+    font-size: 2vh;
     border: none;
     background-color: rgba(255, 255, 255, 0.082);
     outline: none;
@@ -83,9 +86,9 @@
     resize: none;
 }
 
-.Contact .contact-form .submit {
+.mobileContact .contact-form .submit {
     color: white;
-    font-size: 1.5vw;
+    font-size: 2vh;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color .3s;
@@ -93,27 +96,48 @@
     border: none;
     border-radius: 32px;
     font-family: 'Montserrat';
+    margin-top: 5vh;
+    width: 75vw;
 }
 
-.Contact .contact-form .submit:hover {
+.mobileContact .contact-form .submit:hover {
     background-color: #5d7ab8;
 }
 
-.Contact .contact-form .submit:active {
+.mobileContact .contact-form .submit:active {
     color: #344c80;
 }
 
-.Contact .text {
+.ContactAbout .contacttext {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 30vw;
-    right: 12.5vw;
-    height: 100%;
+    width: 80vw;
     color: #79252F;
     font-weight: 600;
-    font-size: 1.75vw;
+    font-size: 3vh;
+}
+
+.ContactAbout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none !important;
+}
+
+.ContactAbout:before {
+    content: "";
+    background-image: url(../../assets/home-imgs/hugh_with_gtr.jpg);
+    background-repeat: no-repeat;
+    background-position: right 0vw;
+    background-size: calc(1.2 * min(max(650px, 100vh), 1200px));
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: -20vw;
+    bottom: 0;
+    z-index: 0;
+    opacity: .3;
 }

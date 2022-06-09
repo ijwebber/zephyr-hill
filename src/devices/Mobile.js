@@ -4,7 +4,8 @@ import Page from '../components/mobilePages/Page';
 import Home from '../components/mobilePages/Home';
 import Reviews from "../components/mobilePages/Reviews";
 //import Music from '../components/mobilePages/Music';
-//import Contact from '../components/mobilePages/Contact';
+import Contact from '../components/mobilePages/Contact';
+import ContactAbout from "../components/mobilePages/ContactAbout";
 
 function Mobile() {
     return (
@@ -15,11 +16,15 @@ function Mobile() {
             <Page bg="#222222">
 
             </Page>
-            <Page bg="blue">
+            
+            <Page>
                 <Reviews></Reviews>
             </Page>
-            <Page bg="red">
-
+            <Page>
+                <ContactAbout></ContactAbout>
+            </Page>
+            <Page>
+                <Contact></Contact>
             </Page>
         </>
     );
