@@ -15,7 +15,7 @@ function Mobile() {
             <Page>
                 <Home></Home>
             </Page>
-            <Page bg="#222222">
+            <Page bg="#222222" ht="50" ctr={true}>
                 <Music></Music>
             </Page>
             <Page>

@@ -8,6 +8,8 @@ import Image7 from './snowblind-cover.jpg';
 import Image8 from './say-youll-believe.png';
 import Image9 from './time-has-a-gift-of-tears.png';
 
+
+//3RD Position is the latest one
 const images = [
     {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
     {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},

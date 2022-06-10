@@ -1,5 +1,4 @@
 .mobilePage {
-    height: min(max(650px, 100vh), 1200px);
     width: 100vw;
     overflow: hidden;
     text-align: center;

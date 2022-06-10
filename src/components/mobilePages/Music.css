@@ -1,9 +1,7 @@
 .mobileMusic .title {
     color: white;
     font-weight: 600;
-    width: 80vw;
-    margin-left: 10vw;
-    margin-top: 10vh;
+    padding: 0 3vw;
     font-size: 3vh;
     display: block;
 }
