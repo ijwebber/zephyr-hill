@@ -10,7 +10,7 @@ function Music(props) {
     const clickRight = () => setOffset(offset - 1);
     const changeOffset = (n) => setOffset(offset - n);
 
-    let position = props.position % sliderImages.length;
+    let position = 2 - offset % sliderImages.length;
     if (position < 0) position = position + sliderImages.length;
 
     return (
@@ -20,7 +20,7 @@ function Music(props) {
             <iframe 
                 title="Spotify Player" 
                 style={{borderRadius: "12px"}} 
-                src={"https://open.spotify.com/embed/track/" + sliderImages[Math.abs(2 - offset) % sliderImages.length].embed + "?utm_source=generator&theme=0"} 
+                src={"https://open.spotify.com/embed/track/" + sliderImages[position].embed + "?utm_source=generator&theme=0"} 
                 width="90%" 
                 height="80" 
                 frameBorder="0" 
