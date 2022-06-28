@@ -10,7 +10,7 @@ function Music(props) {
     const clickRight = () => setOffset(offset - 1);
     const changeOffset = (n) => setOffset(offset - n);
 
-    let position = 2 - offset % sliderImages.length;
+    let position = (2 - offset) % sliderImages.length;
     if (position < 0) position = position + sliderImages.length;
 
     return (
