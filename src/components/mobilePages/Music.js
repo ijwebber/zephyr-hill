@@ -1,14 +1,21 @@
 import React from 'react';
 import './Music.css';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Slider from '../slider/Slider';
 import sliderImages from '../../assets/slider-imgs/images';
 
 function Music(props) {
     const [offset, setOffset] = useState(0);
-    const clickLeft = () => setOffset(offset + 1);
-    const clickRight = () => setOffset(offset - 1);
-    const changeOffset = (n) => setOffset(offset - n);
+    const [autoSlide, setAutoSlide] = useState(true);
+    const clickLeft = () => {setOffset(offset + 1); setAutoSlide(false);};
+    const clickRight = () => {setOffset(offset - 1); setAutoSlide(false);};
+    const changeOffset = (n) => {setOffset(offset - n); setAutoSlide(false);};
+
+    let delay = 2000
+    
+    useInterval(() => {
+        setOffset(offset => offset - 1);
+      }, autoSlide ? delay : null);
 
     let position = (2 - offset) % sliderImages.length;
     if (position < 0) position = position + sliderImages.length;
@@ -30,6 +37,26 @@ function Music(props) {
             </iframe>
         </div>
     );
+}
+
+function useInterval(callback, delay) {
+    const savedCallback = useRef();
+  
+    // Remember the latest function.
+    useEffect(() => {
+      savedCallback.current = callback;
+    }, [callback]);
+  
+    // Set up the interval.
+    useEffect(() => {
+      function tick() {
+        savedCallback.current();
+      }
+      if (delay !== null) {
+        let id = setInterval(tick, delay);
+        return () => clearInterval(id);
+      }
+    }, [delay]);
 }
 
 export default Music;
