@@ -4,7 +4,7 @@ import imgLogo from '../../assets/home-imgs/ZHMLogo.png';
 import imgSoundBetter from '../../assets/home-imgs/SoundBetter.svg';
 
 function Home(props) {
-    const navbarOptions = ["MUSIC", "REVIEWS", "CONTACT"]
+    const navbarOptions = ["MUSIC", "REVIEWS", "CONTACT", "BLOG"]
     const getHeight = () => document.getElementsByName("Page")[0].offsetHeight;
     const scrollTo = index => {window.scroll({top: getHeight() * (index + 1), left: 0, behavior: 'smooth' })};
     const navbarObjs = navbarOptions.map((item, index) => <p key={"navbar" + index} className='option' onClick={() => scrollTo(index)}>{item}</p>)
@@ -16,7 +16,6 @@ function Home(props) {
                 <img className='logo' src={imgLogo} alt="Logo"></img>
                 <div className='navbar'>
                     {navbarObjs}
-                    <a href='https://medium.com/@zephyrhillmusic' target="_blank" rel="noreferrer noopener"><p className='option'>BLOG</p></a>
                 </div>
                 <div className='about'>
                     {"I'm a songwriter & creative collaborator who loves writing great songs with great singers".toUpperCase()}

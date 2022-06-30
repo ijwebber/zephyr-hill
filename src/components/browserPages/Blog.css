@@ -1,0 +1,11 @@
+.Blog .title {
+    color: white;
+    font-weight: 600;
+    padding-top: 5%;
+    font-size: 5vw;
+    display: block;
+}
+
+.Blog .BlogPost {
+    color: white;
+}

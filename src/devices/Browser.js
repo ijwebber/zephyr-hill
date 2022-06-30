@@ -5,7 +5,7 @@ import Home from '../components/browserPages/Home';
 import Music from '../components/browserPages/Music';
 import Reviews from '../components/browserPages/Reviews';
 import Contact from '../components/browserPages/Contact';
-
+import Blog from '../components/browserPages/Blog';
 import Social from '../components/browserPages/Social';
 
 function Browser() {
@@ -22,6 +22,9 @@ function Browser() {
             </Page>
             <Page>
                 <Contact></Contact>
+            </Page>
+            <Page bg="#222222">
+                <Blog></Blog>
             </Page>
             <Social></Social>
         </>
