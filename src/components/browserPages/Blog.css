@@ -1,15 +1,45 @@
+.Blog {
+    height: 100%;
+}
+
 .Blog .title {
     color: white;
     font-weight: 600;
     padding-top: 3%;
-    font-size: 5vw;
+    font-size: 6vh;
     display: block;
+}
+
+.Blog .subtitle {
+    color: white;
+    font-size: 4vh;
+}
+
+.Blog .blog-post {
+    height: 65%;
+}
+.Blog .button {
+    margin-top: 3vh;
+}
+
+.Blog .button a {
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: white;
+    background-color: #344c80;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color .3s;
+}
+
+.Blog .button a:hover {
+    background-color: #5d7ab8;
 }
 
 .Blog .BlogPost {
     width: 70vw;
-    height: 75vh;
-    background-color: white;
+    height: 100%;
+    background-color: rgba(243, 243, 243, 0.577);
     margin-left: 15vw;
     margin-top: 3vh;
     padding: 20px 30px;
@@ -36,7 +66,7 @@
 }
 
 .Blog .BlogPost img {
-    width: 60vh;
+    width: 30%;
 }
 
 .Blog .BlogPost .blog-title {
@@ -49,7 +79,6 @@
     margin-bottom: 2vh;
     text-align: center;
     font-size: 2vh;
-    color: grey;
 }
 
 .Blog .BlogPost p {

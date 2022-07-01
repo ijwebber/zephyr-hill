@@ -43,16 +43,16 @@ function Blog() {
       });
     }, [])
 
-    console.log(items[1])
-    console.log(profile)
-
     return (
         <div className="Blog">
             <div className='title'>
-                LATEST BLOG POST
+                LATEST POST
             </div>
-            <div>
+            <div className="blog-post">
                 <BlogPost {...items[0]} {...profile}></BlogPost>
+            </div>
+            <div className="button">
+                <a href="https://medium.com/@zephyrhillmusic" target="_blank" rel="noreferrer noopener">MORE POSTS</a>
             </div>
         </div>
     );
