@@ -26,6 +26,7 @@ function Music(props) {
             <iframe title="Spotify Player" 
                     style={{borderRadius: "12px"}} 
                     src={"https://open.spotify.com/embed/track/" + sliderImages[position].embed + "?utm_source=generator&theme=0"} 
+                    onPointerEnter={() => setAutoSlide(false)}
                     width="30%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
             </iframe>
         </div>
