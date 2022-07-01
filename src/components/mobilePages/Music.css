@@ -11,3 +11,9 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+.iframeContainer {
+    width: auto;
+    height: auto;
+    overflow: auto;
+}
