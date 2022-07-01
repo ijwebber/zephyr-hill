@@ -1,11 +1,68 @@
 .Blog .title {
     color: white;
     font-weight: 600;
-    padding-top: 5%;
+    padding-top: 3%;
     font-size: 5vw;
     display: block;
 }
 
 .Blog .BlogPost {
-    color: white;
+    width: 70vw;
+    height: 75vh;
+    background-color: white;
+    margin-left: 15vw;
+    margin-top: 3vh;
+    padding: 20px 30px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.Blog .BlogPost::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+.Blog .BlogPost::-webkit-scrollbar-track {
+    background: none; 
+}
+.Blog .BlogPost::-webkit-scrollbar-thumb {
+    background: rgb(82, 82, 82);  
+}
+
+/* Handle on hover */
+.Blog .BlogPost::-webkit-scrollbar-thumb:hover {
+    background: rgb(125, 125, 125); 
+}
+
+.Blog .BlogPost img {
+    width: 60vh;
+}
+
+.Blog .BlogPost .blog-title {
+    font-size: 5vh;
+    font-weight: 600;
+    margin-bottom: 0vh;
+}
+
+.Blog .BlogPost figure {
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 2vh;
+    color: grey;
+}
+
+.Blog .BlogPost p {
+    font-size: 2.5vh;
+    margin-bottom: 3vh;
+}
+
+.Blog .BlogPost h4 {
+    font-size: 3vh;
+}
+
+.Blog .BlogPost blockquote {
+    margin-bottom: 3vh;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

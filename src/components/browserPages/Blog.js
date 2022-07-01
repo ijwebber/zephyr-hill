@@ -4,12 +4,13 @@ import './Blog.css';
 import axios from 'axios';
 
 
-// TODO design nice display card and put in a flex display
-// TODO ask if we only want the top 3 or latest 3
 function BlogPost(props) {
-    return (<div className="BlogPost">
-        {props.title + " " + props.pubDate}
-    </div>);
+    return (
+        <div className="BlogPost">
+            <div className="blog-title">{props.title}</div>
+            <div className="content" dangerouslySetInnerHTML={{'__html': props.content}}></div>
+        </div>
+    );
 }
 
 function Blog() {
@@ -42,14 +43,17 @@ function Blog() {
       });
     }, [])
 
+    console.log(items[1])
+    console.log(profile)
+
     return (
         <div className="Blog">
             <div className='title'>
-                BLOG
+                LATEST BLOG POST
             </div>
-            <div></div>{items.slice(0,3).map((post, index) => (
-                    <BlogPost key={index} {...post} {...profile} {...index}></BlogPost>
-            ))}
+            <div>
+                <BlogPost {...items[0]} {...profile}></BlogPost>
+            </div>
         </div>
     );
 }
