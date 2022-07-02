@@ -3,6 +3,25 @@
     height: 100%;
 }
 
+.mobileBlog {
+    margin-top: 12.5vh;
+    color: white;
+    font-weight: 600;
+    font-size: 5vh;
+}
+
+.mobileBlog .BlogPost {
+    width: 90%;
+    height: 100%;
+    background-color: rgba(243, 243, 243, 0.577);
+    margin-left: 5vw;
+    margin-top: 3vh;
+    padding: 20px 30px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    text-align: left;
+}
+
 .mobileBlog .button {
     margin-top: 3vh;
 }
@@ -19,4 +38,39 @@
 
 .mobileBlog .button a:hover {
     background-color: #5d7ab8;
+}
+
+.mobileBlog .blog-post {
+    height: 65%;
+}
+
+.mobileBlog .BlogPost img {
+    width: 50%;
+}
+
+.mobileBlog .BlogPost .blog-title {
+    font-size: 3.5vh;
+    font-weight: 600;
+    margin-bottom: 0vh;
+}
+
+.mobileBlog .BlogPost figure {
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+.mobileBlog .BlogPost p {
+    font-size: 2vh;
+    margin-bottom: 3vh;
+}
+
+.mobileBlog .BlogPost h4 {
+    font-size: 2.5vh;
+}
+
+.mobileBlog .BlogPost blockquote {
+    margin-bottom: 3vh;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
