@@ -1,0 +1,96 @@
+.Blog {
+    height: 100%;
+}
+
+.Blog .title {
+    color: white;
+    font-weight: 600;
+    padding-top: 3%;
+    font-size: 6vh;
+    display: block;
+}
+
+.Blog .blog-post {
+    height: 65%;
+}
+.Blog .button {
+    margin-top: 3vh;
+}
+
+.Blog .button a {
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: white;
+    background-color: #344c80;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color .3s;
+}
+
+.Blog .button a:hover {
+    background-color: #5d7ab8;
+}
+
+.Blog .BlogPost {
+    width: 70vw;
+    height: 100%;
+    border-radius: 38px;
+    background: linear-gradient(315deg, #1f1f1f, #242424);
+    box-shadow:  -9px -9px 18px #1c1c1c,
+                9px 9px 18px #282828;
+    margin-left: 15vw;
+    margin-top: 3vh;
+    padding: 20px 30px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    text-align: left;
+    color: white;
+}
+
+.Blog .BlogPost::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+.Blog .BlogPost::-webkit-scrollbar-track {
+    background: none; 
+}
+.Blog .BlogPost::-webkit-scrollbar-thumb {
+    background: rgb(82, 82, 82);  
+}
+
+/* Handle on hover */
+.Blog .BlogPost::-webkit-scrollbar-thumb:hover {
+    background: rgb(125, 125, 125); 
+}
+
+.Blog .BlogPost img {
+    width: 30%;
+}
+
+.Blog .BlogPost .blog-title {
+    font-size: 5vh;
+    font-weight: 600;
+    margin-bottom: 0vh;
+}
+
+.Blog .BlogPost figure {
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 0vh;
+}
+
+.Blog .BlogPost p {
+    font-size: 2.5vh;
+    margin-bottom: 3vh;
+}
+
+.Blog .BlogPost h4 {
+    font-size: 3vh;
+}
+
+.Blog .BlogPost blockquote {
+    margin-bottom: 3vh;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
