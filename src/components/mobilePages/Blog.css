@@ -13,7 +13,9 @@
 .mobileBlog .BlogPost {
     width: 90%;
     height: 100%;
-    background-color: rgba(243, 243, 243, 0.577);
+    background: linear-gradient(315deg, #1f1f1f, #242424);
+    box-shadow:  -9px -9px 18px #1c1c1c,
+                9px 9px 18px #282828;
     margin-left: 5vw;
     margin-top: 3vh;
     padding: 20px 30px;

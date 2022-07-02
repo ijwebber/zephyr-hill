@@ -41,7 +41,7 @@ function Blog() {
 
     return (
         <div className="mobileBlog">
-            <div className="title">BLOG</div>
+            <div className="title">LATEST POST</div>
             <div className="blog-post">
                 <BlogPost {...items[0]} {...profile}></BlogPost>
             </div>
