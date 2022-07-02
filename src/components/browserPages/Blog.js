@@ -21,7 +21,6 @@ function Blog() {
         profileurl: "",
       });
     const [items, setItems] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
     const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zephyrhillmusic";
@@ -30,13 +29,11 @@ function Blog() {
             const avatar = data.data.feed.image;
             const profileLink = data.data.feed.link;
             const res = data.data.items;
-            const posts = res.filter(item => item.categories.length > 0);
 
             const title = data.data.feed.title;
             
             setProfile(profile => {return {...profile, ptitle: title, profileurl: profileLink, avtar: avatar,}});
-            setItems(posts)
-            setIsLoading(false)
+            setItems(res)
       }).catch((e) => {
         setError(e.toJSON())
         console.log(error);
