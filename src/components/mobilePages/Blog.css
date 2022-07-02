@@ -1,0 +1,22 @@
+.mobileBlog {
+    width: 100%;
+    height: 100%;
+}
+
+.mobileBlog .button {
+    margin-top: 3vh;
+}
+
+.mobileBlog .button a {
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: white;
+    background-color: #344c80;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color .3s;
+}
+
+.mobileBlog .button a:hover {
+    background-color: #5d7ab8;
+}

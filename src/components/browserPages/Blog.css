@@ -10,11 +10,6 @@
     display: block;
 }
 
-.Blog .subtitle {
-    color: white;
-    font-size: 4vh;
-}
-
 .Blog .blog-post {
     height: 65%;
 }
