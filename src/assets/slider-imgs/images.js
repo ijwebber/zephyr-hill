@@ -8,12 +8,14 @@ import Image7 from './snowblind-cover.jpg';
 import Image8 from './say-youll-believe.png';
 import Image9 from './time-has-a-gift-of-tears.png';
 import imgNotYourStory from './not-your-story.png';
+import imgLoud17 from './Loud&17.png';
 
 
 //3RD Position is the latest one
 const images = [
     {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
     {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},
+    {"image": imgLoud17, "embed": "1fYCAjCeUnvBJ2BvxYvOtb"},
     {"image": imgNotYourStory, "embed": "48slRypL18Nh0uY1rLjVkR"},
     {"image": Image3, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
     {"image": Image4, "embed": "2E82L2w1fY4r1yLT1LBxLC"},
