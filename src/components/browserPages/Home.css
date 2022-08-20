@@ -88,5 +88,17 @@
     cursor: pointer;
 }
 
+.Home .home-right .latest-song {
+    width: 12%;
+    margin-left: 10vh;
+    font-size: 1vw;
+    font-weight: 600;
+    display: inline-block;
+    color: #772D2D;
+}
 
+.Home .home-right .latest-song img {
+    width: 100%;
+    cursor: pointer;
+}
 

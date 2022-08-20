@@ -36,5 +36,18 @@
     cursor: pointer;
 }
 
+.mobileHome .latest-song {
+    width: 15vh;
+    margin-left: 4vh;
+    font-size: 2vh;
+    font-weight: 600;
+    display: inline-block;
+    color: #772D2D;
+}
+
+.mobileHome .latest-song img {
+    width: 100%;
+    cursor: pointer;
+}
 
 
