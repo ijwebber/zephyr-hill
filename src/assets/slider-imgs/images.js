@@ -12,9 +12,7 @@ import imgLoud17 from './Loud&17.png';
 
 
 //3RD Position is the latest one
-const images = [
-    {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
-    {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},
+var images = [
     {"image": imgLoud17, "embed": "1fYCAjCeUnvBJ2BvxYvOtb"},
     {"image": imgNotYourStory, "embed": "48slRypL18Nh0uY1rLjVkR"},
     {"image": Image3, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
@@ -23,7 +21,9 @@ const images = [
     {"image": Image6, "embed": "4PMuN3Pd6m11qyNmXWsT7V"},
     {"image": Image7, "embed": "39pIEdsVE2d5MOW14jM7at"},
     {"image": Image8, "embed": "4ER7bWK1Sq5I59qidf41kb"},
-    {"image": Image9, "embed": "52p5ylbdqvshawzhGgU30I"}
+    {"image": Image9, "embed": "52p5ylbdqvshawzhGgU30I"},
+    {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
+    {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},
 ]
 
 export default images;

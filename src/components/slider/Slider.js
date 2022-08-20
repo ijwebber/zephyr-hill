@@ -6,6 +6,10 @@ import svgLeftArrow from '../../assets/slider-imgs/WhiteArrowLeft.svg'
 export default function Slider(props) {
     let size = props.size / 2.5
     let images = props.images
+    const start = images.slice(-2) 
+    const end = images.slice(0, -2)
+    images = start.concat(end)
+
     const panels = images.map((item,index) => <Panel size={size} 
                                                       image={item.image} 
                                                       position={index + 1 + props.offset} 

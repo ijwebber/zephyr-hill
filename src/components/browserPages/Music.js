@@ -16,7 +16,7 @@ function Music(props) {
         setOffset(offset => offset - 1);
       }, autoSlide ? delay : null);
 
-    let position = (2 - offset) % sliderImages.length;
+    let position = (-offset) % sliderImages.length;
     if (position < 0) position = position + sliderImages.length;   
 
     return (
