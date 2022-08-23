@@ -32,7 +32,6 @@
 
 .mobileHome .soundbetter {
     width: 20vh;
-    margin-top: 7vh;
     cursor: pointer;
 }
 
@@ -42,12 +41,21 @@
     font-size: 2vh;
     font-weight: 600;
     display: inline-block;
-    color: #772D2D;
+    color: #454545;
 }
 
 .mobileHome .latest-song img {
-    width: 100%;
+    width: 90%;
     cursor: pointer;
+    border: white solid 3px;
+    border-radius: 10%;
+}
+
+.mobileHome .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
 }
 
 

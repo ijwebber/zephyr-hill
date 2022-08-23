@@ -26,7 +26,9 @@ function Home(props) {
                 <div>
                     <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank" rel="noreferrer noopener"><img src={imgSoundBetter} className="soundbetter" alt="Soundbetter Link"></img></a>
                     <div className='latest-song'>
-                        <a href={"https://open.spotify.com/track/"+ latestSong.embed} target="_blank" rel="noreferrer noopener"><img src={latestSong.image}></img></a>
+                        <a href={"https://open.spotify.com/track/"+ latestSong.embed} target="_blank" rel="noreferrer noopener">
+                            <img src={latestSong.image} alt="Latest Song"></img>
+                        </a>
                         <p>LATEST SONG</p>
                     </div>
                 </div>

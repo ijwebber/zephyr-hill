@@ -15,10 +15,12 @@ function Home(props) {
                 <div className='about'>
                     {"I'm a songwriter & creative collaborator who loves writing great songs with great singers".toUpperCase()}
                 </div>
-                <div>
+                <div className='links'>
                 <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank" rel="noreferrer noopener"><img src={imgSoundBetter} className="soundbetter" alt="Soundbetter Link"></img></a>
                     <div className='latest-song'>
-                            <a href={"https://open.spotify.com/track/"+ latestSong.embed} target="_blank" rel="noreferrer noopener"><img src={latestSong.image}></img></a>
+                            <a href={"https://open.spotify.com/track/"+ latestSong.embed} target="_blank" rel="noreferrer noopener">
+                                <img src={latestSong.image} alt="Latest Song"></img>
+                            </a>
                             <p>LATEST SONG</p>
                     </div>
                 </div>

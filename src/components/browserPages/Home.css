@@ -94,11 +94,14 @@
     font-size: 1vw;
     font-weight: 600;
     display: inline-block;
-    color: #772D2D;
+    color: #454545;
+
 }
 
 .Home .home-right .latest-song img {
     width: 100%;
     cursor: pointer;
+    border-radius: 10%;
+    border: white 3px solid;
 }
 
