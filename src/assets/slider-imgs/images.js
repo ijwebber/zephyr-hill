@@ -9,10 +9,12 @@ import Image8 from './say-youll-believe.png';
 import Image9 from './time-has-a-gift-of-tears.png';
 import imgNotYourStory from './not-your-story.png';
 import imgLoud17 from './Loud&17.png';
+import imgScars from './scars.jpg';
 
 
 //3RD Position is the latest one
 var images = [
+    {"image": imgScars, "embed": "59ytT0GP5bKoJCCX8bsfiL"},
     {"image": imgLoud17, "embed": "1fYCAjCeUnvBJ2BvxYvOtb"},
     {"image": imgNotYourStory, "embed": "48slRypL18Nh0uY1rLjVkR"},
     {"image": Image3, "embed": "4zNX4cqZ9vUPT3LvWZe4Wf"},
