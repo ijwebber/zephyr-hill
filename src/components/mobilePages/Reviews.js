@@ -1,6 +1,7 @@
 import React from 'react';
 import './Reviews.css';
 import imgCollab from '../../assets/review-imgs/everycollab.png'
+import imgBlog from '../../assets/review-imgs/SCPR.png'
 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -37,6 +38,8 @@ function MyCarousel() {
     );
 }
 
+
+
 function Reviews() {
     return (
         <div className='mobileReviews'>
@@ -49,6 +52,7 @@ function Reviews() {
                 REVIEWS
             </div>
             <MyCarousel></MyCarousel>
+            
         </div>
     );
 }
