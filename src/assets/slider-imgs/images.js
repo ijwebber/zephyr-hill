@@ -6,13 +6,14 @@ import Image5 from './maple-state.png';
 import Image6 from './now-artwork.jpg';
 import Image7 from './snowblind-cover.jpg';
 import Image8 from './say-youll-believe.png';
-import Image9 from './time-has-a-gift-of-tears.png';
 import imgNotYourStory from './not-your-story.png';
 import imgLoud17 from './Loud&17.png';
 import imgScars from './scars.jpg';
 import imgSuperman from './superman.jpg';
+import imgOneSky from './onesky.jpg';
 
 var images = [
+    {'image': imgOneSky, 'embed': '7KSUMaHPaBs7Cy4iweG6lk'},
     {"image": imgSuperman, "embed": "01trKGpNGhIquQiXETnDId"},
     {"image": imgScars, "embed": "59ytT0GP5bKoJCCX8bsfiL"},
     {"image": imgLoud17, "embed": "1fYCAjCeUnvBJ2BvxYvOtb"},
@@ -23,7 +24,6 @@ var images = [
     {"image": Image6, "embed": "4PMuN3Pd6m11qyNmXWsT7V"},
     {"image": Image7, "embed": "39pIEdsVE2d5MOW14jM7at"},
     {"image": Image8, "embed": "4ER7bWK1Sq5I59qidf41kb"},
-    {"image": Image9, "embed": "52p5ylbdqvshawzhGgU30I"},
     {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
     {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},
 ]
