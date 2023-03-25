@@ -33,7 +33,7 @@ function Home(props) {
                         <a href="https://zephyrhillmusic.gumroad.com/l/songhouse" target="_blank" rel="noreferrer noopener">
                             <img src={imgSongHouse} alt="Songwriting Resource"></img>
                         </a>
-                        <p>SONGWRITING RESOURCE</p>
+                        <p style={{position: 'absolute', bottom: '-25px'}}>SONGWRITING RESOURCE</p>
                     </div>
                 </div>
             </div> 
