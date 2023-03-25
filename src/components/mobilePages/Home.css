@@ -5,7 +5,7 @@
 
 .mobileHome:before {
     content: "";
-    background-image: url(../../assets/home-imgs/hills.jpg);
+    background-image: url(../../assets/home-imgs/road.jpg);
     background-repeat: no-repeat;
     background-position: -50vh -30vh;
     background-size: calc(1.5 * min(max(650px, 100vh), 1200px));

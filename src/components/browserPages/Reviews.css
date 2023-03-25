@@ -44,7 +44,7 @@
 
 /* TESTIMONIALS */
 
-.carousel-wrapper {
+.Reviews .carousel-wrapper {
   width: 75vw;
   margin-left: 12.5vw;
   color: #454545 !important;
@@ -115,7 +115,7 @@
   }
 }
 
-.testimonials {
+.Reviews .testimonials {
   text-align: center;
   margin-top: 10vh;
 }
@@ -126,11 +126,11 @@
   align-items: center;
 }
 
-.songwritingBlog img {
+.Reviews .songwritingBlog img {
   height: 8vw;
 }
 
-.songwritingBlog {
+.Reviews .songwritingBlog {
   margin: auto;
   margin-top: 5vh;
   font-size: 3.2vh;

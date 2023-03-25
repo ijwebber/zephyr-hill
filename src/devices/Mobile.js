@@ -8,6 +8,7 @@ import Contact from '../components/mobilePages/Contact';
 import ContactAbout from "../components/mobilePages/ContactAbout";
 import Social from "../components/mobilePages/Social";
 import Blog from "../components/mobilePages/Blog";
+import SongwritingBlog from "../components/mobilePages/SongwritingBlog";
 
 function Mobile() {
     return (
@@ -19,6 +20,7 @@ function Mobile() {
             <Page bg="#222222" ht="50" ctr={true}>
                 <Music></Music>
             </Page>
+            
             <Page>
                 <Reviews></Reviews>
             </Page>
@@ -30,6 +32,9 @@ function Mobile() {
             </Page>
             <Page bg="#222222">
                 <Blog></Blog>
+            </Page>
+            <Page ht="30">
+                <SongwritingBlog></SongwritingBlog>
             </Page>
         </>
     );

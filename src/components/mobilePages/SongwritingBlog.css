@@ -1,0 +1,10 @@
+.mobileSongwritingBlog img {
+    height: 20vh;
+  }
+  
+.mobileSongwritingBlog {
+    margin: auto;
+    margin-top: 5vh;
+    font-size: 3.2vh;
+    font-weight: 500;
+}

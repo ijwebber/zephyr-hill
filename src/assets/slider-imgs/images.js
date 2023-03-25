@@ -10,10 +10,10 @@ import Image9 from './time-has-a-gift-of-tears.png';
 import imgNotYourStory from './not-your-story.png';
 import imgLoud17 from './Loud&17.png';
 import imgScars from './scars.jpg';
+import imgSuperman from './superman.jpg';
 
-
-//3RD Position is the latest one
 var images = [
+    {"image": imgSuperman, "embed": "01trKGpNGhIquQiXETnDId"},
     {"image": imgScars, "embed": "59ytT0GP5bKoJCCX8bsfiL"},
     {"image": imgLoud17, "embed": "1fYCAjCeUnvBJ2BvxYvOtb"},
     {"image": imgNotYourStory, "embed": "48slRypL18Nh0uY1rLjVkR"},

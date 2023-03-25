@@ -52,7 +52,6 @@
 /* TESTIMONIALS */
 
 .mobileReviews .carousel-wrapper {
-  margin-top: 20vh;
   width: 75vw;
   margin-left: 12.5vw;
   color: #454545 !important;
@@ -132,4 +131,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mobileReviews .songwritingBlog img {
+  height: 16vh;
+}
+
+.mobileReviews .songwritingBlog {
+  margin: auto;
+  margin-top: calc(45vh - 50vw);
+  font-size: 2.6vh;
+  font-weight: 500;
 }

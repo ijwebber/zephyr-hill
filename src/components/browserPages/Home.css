@@ -29,7 +29,7 @@
 
 .Home .home-right:before {
     content: "";
-    background-image: url(../../assets/home-imgs/hills.jpg);
+    background-image: url(../../assets/home-imgs/road.jpg);
     background-repeat: no-repeat;
     background-position: -10vw -20vw;
     background-size: 85vw;
