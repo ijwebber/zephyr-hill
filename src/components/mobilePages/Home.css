@@ -53,10 +53,15 @@
     top: 0;
 }
 
+.mobileHome .latest-song a {
+    text-decoration: none;
+    color: #454545;
+}
+
 .mobileHome .links {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     margin-top: 7vh;
 }
 

@@ -24,16 +24,20 @@ function Home(props) {
                 <div className='about'>
                     {"I'm a songwriter & creative collaborator who loves writing great songs with great singers".toUpperCase()}
                 </div>
-                <div>
-                    <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank" rel="noreferrer noopener"><img src={imgSoundBetter} className="soundbetter" alt="Soundbetter Link"></img></a>
+                <div style={{marginTop: '10vh'}}>
+                    <div style={{display: 'inline-block', width: "20%", position: "relative", top: 0, verticalAlign: 'top'}}>
+                        <a href='https://soundbetter.com/profiles/122517-zephyrhillmusic' target="_blank" rel="noreferrer noopener">
+                            <img src={imgSoundBetter} className="soundbetter" alt="Soundbetter Link"></img>
+                        </a>
+                    </div>
                     <div className='latest-song'>
                         {/* <a href={"https://open.spotify.com/track/"+ latestSong.embed} target="_blank" rel="noreferrer noopener">
                             <img src={latestSong.image} alt="Latest Song"></img>
                         </a> */}
                         <a href="https://zephyrhillmusic.gumroad.com/l/songhouse" target="_blank" rel="noreferrer noopener">
                             <img src={imgSongHouse} alt="Songwriting Resource"></img>
+                            <p style={{display: 'block'}}>SONGWRITING RESOURCE</p>
                         </a>
-                        <p style={{position: 'absolute', bottom: '-25px'}}>SONGWRITING RESOURCE</p>
                     </div>
                 </div>
             </div> 
