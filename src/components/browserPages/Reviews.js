@@ -2,6 +2,7 @@ import React from 'react';
 import './Reviews.css';
 import imgCollab from '../../assets/review-imgs/everycollab.png'
 import imgBlog from '../../assets/review-imgs/SCPR.png'
+import imgBMG from '../../assets/review-imgs/bmg.png'
 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -41,7 +42,7 @@ function MyCarousel() {
 function SongwritingBlog() {
     return (
         <div className='songwritingBlog'>
-            <p>Blog writer for:</p>
+            <p>Blog writer</p>
             <a href="https://www.scarletriverpr.com/blog/categories/behind-the-lyrics" 
                 target="_blank" 
                 rel="noreferrer noopener">
@@ -63,7 +64,17 @@ function Reviews() {
                 REVIEWS
             </div>
             <MyCarousel />
-            <SongwritingBlog />
+            <div style={{width: '100%', display: 'flex', justifyContent: 'center', marginTop: '5vh'}}>
+                <SongwritingBlog />
+                <div className='songwritingBlog'>
+                    <p>Represented by</p>
+                    <a href="https://bmgproductionmusic.com/en-gb/search/tracks?searchTerm=composer:(Hugh%20Webber)" 
+                    target="_blank" 
+                    rel="noreferrer noopener">
+                        <img src={imgBMG} alt="bmg music productions" />
+                    </a>
+                </div>
+            </div>
         </div>
     );
 }

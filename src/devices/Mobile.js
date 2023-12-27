@@ -9,6 +9,7 @@ import ContactAbout from "../components/mobilePages/ContactAbout";
 import Social from "../components/mobilePages/Social";
 import Blog from "../components/mobilePages/Blog";
 import SongwritingBlog from "../components/mobilePages/SongwritingBlog";
+import imgBMG from "../assets/review-imgs/bmg.png"
 
 function Mobile() {
     return (
@@ -34,7 +35,17 @@ function Mobile() {
                 <Blog></Blog>
             </Page>
             <Page ht="30">
-                <SongwritingBlog></SongwritingBlog>
+                <div style={{display: 'flex', justifyContent: 'center'}}>
+                    <SongwritingBlog></SongwritingBlog>
+                    <div className='mobileSongwritingBlog'>
+                        <p>Represented by</p>
+                        <a href="https://bmgproductionmusic.com/en-gb/search/tracks?searchTerm=composer:(Hugh%20Webber)" 
+                        target="_blank" 
+                        rel="noreferrer noopener">
+                            <img src={imgBMG} alt="bmg music productions"/>
+                        </a>
+                    </div>
+                </div>
             </Page>
         </>
     );

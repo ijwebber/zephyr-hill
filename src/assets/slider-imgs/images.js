@@ -1,5 +1,4 @@
 import Image1 from './11-lies.png';
-import Image2 from './becky-what-is-life.png';
 import Image3 from './change-coming.jpg';
 import Image4 from './crush-depth-cheribaby.jpg';
 import Image5 from './maple-state.png';
@@ -11,8 +10,10 @@ import imgLoud17 from './Loud&17.png';
 import imgScars from './scars.jpg';
 import imgSuperman from './superman.jpg';
 import imgOneSky from './onesky.jpg';
+import imgSettleDown from './wont-settle-down.jpg';
 
 var images = [
+    {'image': imgSettleDown, 'embed': '1QrAxQZxC5hVZyakDKiOhS'},
     {'image': imgOneSky, 'embed': '7KSUMaHPaBs7Cy4iweG6lk'},
     {"image": imgSuperman, "embed": "01trKGpNGhIquQiXETnDId"},
     {"image": imgScars, "embed": "59ytT0GP5bKoJCCX8bsfiL"},
@@ -24,8 +25,7 @@ var images = [
     {"image": Image6, "embed": "4PMuN3Pd6m11qyNmXWsT7V"},
     {"image": Image7, "embed": "39pIEdsVE2d5MOW14jM7at"},
     {"image": Image8, "embed": "4ER7bWK1Sq5I59qidf41kb"},
-    {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"},
-    {"image": Image2, "embed": "2rXSlpqlavfQQKhutz8fpF"},
+    {"image": Image1, "embed": "4If3Qfdfi9whhGBgkV3bAu"}
 ]
 
 export default images;

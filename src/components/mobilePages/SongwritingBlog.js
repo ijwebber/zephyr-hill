@@ -7,7 +7,7 @@ import imgBlog from '../../assets/review-imgs/SCPR.png'
 export default function SongwritingBlog() {
     return (
         <div className='mobileSongwritingBlog'>
-            <p>Blog writer for:</p>
+            <p>Blog writer</p>
             <a href="https://www.scarletriverpr.com/blog/categories/behind-the-lyrics" 
                 target="_blank" 
                 rel="noreferrer noopener">

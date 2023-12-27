@@ -7,7 +7,7 @@
     content: "";
     background-image: url(../../assets/home-imgs/road.jpg);
     background-repeat: no-repeat;
-    background-position: -50vh -30vh;
+    background-position: 51% 0;
     background-size: calc(1.5 * min(max(650px, 100vh), 1200px));
     position: absolute;
     top: 0;

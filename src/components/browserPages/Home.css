@@ -13,7 +13,6 @@
     background-repeat: no-repeat;
     background-position: -26vw 0vw;
     background-size: max(64vw, 64vh) max(64vw, 64vh);
-    box-shadow: 3px -8px 10px 1px grey;
     position: relative;
     display: inline-block;
     z-index: 1;
@@ -31,7 +30,7 @@
     content: "";
     background-image: url(../../assets/home-imgs/road.jpg);
     background-repeat: no-repeat;
-    background-position: -10vw -20vw;
+    background-position: -12.5vw 0;
     background-size: 85vw;
     position: absolute;
     top: 0;
