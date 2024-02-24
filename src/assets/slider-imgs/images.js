@@ -12,7 +12,12 @@ import imgSuperman from './superman.jpg';
 import imgOneSky from './onesky.jpg';
 import imgSettleDown from './wont-settle-down.jpg';
 
-var images = [
+import imgNeonNights from './neon-nights.jpg';
+import imgFriendshipBench from './friendship-bench.jpg';
+
+const images = [
+    {image: imgNeonNights , embed: '524TMqXYsL0QoZ3eV8iyhl' },
+    {image: imgFriendshipBench, embed: '0KvhfZmjVZBIik3VP9F5d2'},
     {'image': imgSettleDown, 'embed': '1QrAxQZxC5hVZyakDKiOhS'},
     {'image': imgOneSky, 'embed': '7KSUMaHPaBs7Cy4iweG6lk'},
     {"image": imgSuperman, "embed": "01trKGpNGhIquQiXETnDId"},
