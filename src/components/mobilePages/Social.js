@@ -1,18 +1,9 @@
 import React from 'react';
 
 import './Social.css'
-
-import imgSpotify from '../../assets/social-imgs/spotify.png';
-import imgFacebook from '../../assets/social-imgs/facebook.png';
-import imgInstagram from '../../assets/social-imgs/instagram.png';
-import imgBlog from '../../assets/social-imgs/medium.png'
+import { socials } from '../browserPages/Social';
 
 function Social() {
-    const socials = [["Spotify", imgSpotify, "https://spoti.fi/3EfjTu1"], 
-                     ["Facebook", imgFacebook, "https://www.facebook.com/ZephyrHillMusic/"], 
-                     ["Instagram", imgInstagram, "https://www.instagram.com/zephyrhillmusic/"],
-                     ["Blog", imgBlog, "https://medium.com/@zephyrhillmusic"]]
-
     return (
         <div className='mobileSocial'>
             <div className='main'>

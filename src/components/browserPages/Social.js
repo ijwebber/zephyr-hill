@@ -7,12 +7,12 @@ import imgFacebook from '../../assets/social-imgs/facebook.png';
 import imgBandcamp from '../../assets/social-imgs/bandcamp.png'
 import imgBlog from '../../assets/social-imgs/medium.png';
 
-function Social() {
-    const socials = [["Spotify", imgSpotify, "https://open.spotify.com/playlist/5Vde76Fy1EiEg11KdCO4A2?si=e12c1d6079264d35"], 
+export const socials = [["Spotify", imgSpotify, "https://open.spotify.com/playlist/5Vde76Fy1EiEg11KdCO4A2?si=e12c1d6079264d35"], 
                      ["Facebook", imgFacebook, "https://www.facebook.com/ZephyrHillMusic/"],
                      ["Bandcamp", imgBandcamp, "https://zephyrhillmusic.bandcamp.com"],
                      ["Blog", imgBlog, "https://medium.com/@zephyrhillmusic"]]
 
+function Social() {
     return (
         <div className='Social'>
             <div className='main'>
