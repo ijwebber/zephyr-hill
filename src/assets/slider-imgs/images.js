@@ -11,11 +11,12 @@ import imgScars from './scars.jpg';
 import imgSuperman from './superman.jpg';
 import imgOneSky from './onesky.jpg';
 import imgSettleDown from './wont-settle-down.jpg';
-
 import imgNeonNights from './neon-nights.jpg';
 import imgFriendshipBench from './friendship-bench.jpg';
+import imgBreathe from './Breathe.png'
 
 const images = [
+    {image: imgBreathe, embed: '3RtLpaU0a4zegliweJGWPZ'},
     {image: imgNeonNights , embed: '524TMqXYsL0QoZ3eV8iyhl' },
     {image: imgFriendshipBench, embed: '0KvhfZmjVZBIik3VP9F5d2'},
     {'image': imgSettleDown, 'embed': '1QrAxQZxC5hVZyakDKiOhS'},

@@ -3,13 +3,14 @@ import React from 'react';
 
 import imgSpotify from '../../assets/social-imgs/spotify.png';
 import imgFacebook from '../../assets/social-imgs/facebook.png';
-import imgInstagram from '../../assets/social-imgs/instagram.png';
+// import imgInstagram from '../../assets/social-imgs/instagram.png';
+import imgBandcamp from '../../assets/social-imgs/bandcamp.png'
 import imgBlog from '../../assets/social-imgs/medium.png';
 
 function Social() {
-    const socials = [["Spotify", imgSpotify, "https://spoti.fi/3EfjTu1"], 
-                     ["Facebook", imgFacebook, "https://www.facebook.com/ZephyrHillMusic/"], 
-                     ["Instagram", imgInstagram, "https://www.instagram.com/zephyrhillmusic/"],
+    const socials = [["Spotify", imgSpotify, "https://open.spotify.com/playlist/5Vde76Fy1EiEg11KdCO4A2?si=e12c1d6079264d35"], 
+                     ["Facebook", imgFacebook, "https://www.facebook.com/ZephyrHillMusic/"],
+                     ["Bandcamp", imgBandcamp, "https://zephyrhillmusic.bandcamp.com"],
                      ["Blog", imgBlog, "https://medium.com/@zephyrhillmusic"]]
 
     return (
