@@ -126,12 +126,16 @@
   align-items: center;
 }
 
-.Reviews .songwritingBlog img {
+.Reviews .represented img {
   height: 8vw;
 }
 
-.Reviews .songwritingBlog {
+.Reviews .represented .clearwave img {
+  padding: 10px 20px;
+}
+
+.Reviews p.represented {
   font-size: 2.8vh;
   font-weight: 500;
-  margin: 0 20px
+  margin: 5vh 20px 0 20px
 }

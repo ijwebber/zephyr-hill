@@ -1,7 +1,7 @@
 import React from 'react';
 import './Reviews.css';
 import imgCollab from '../../assets/review-imgs/everycollab.png'
-import imgBlog from '../../assets/review-imgs/SCPR.png'
+import imgClearwave from '../../assets/review-imgs/clearwave.jpg'
 import imgBMG from '../../assets/review-imgs/bmg.png'
 
 import { Carousel } from 'react-responsive-carousel';
@@ -39,14 +39,13 @@ function MyCarousel() {
     );
 }
 
-function SongwritingBlog() {
+function Clearwave() {
     return (
-        <div className='songwritingBlog'>
-            <p>Blog writer</p>
-            <a href="https://www.scarletriverpr.com/blog/categories/behind-the-lyrics" 
+        <div className='clearwave'>
+            <a href="https://www.clearwavemusic.com/music/cwm0130-modern-dance-pop-vocals" 
                 target="_blank" 
                 rel="noreferrer noopener">
-                <img src={imgBlog} alt="songwriting blog" />
+                <img src={imgClearwave} alt="clearwave music" />
             </a>
         </div>
     );
@@ -64,10 +63,10 @@ function Reviews() {
                 REVIEWS
             </div>
             <MyCarousel />
-            <div style={{width: '100%', display: 'flex', justifyContent: 'center', marginTop: '5vh'}}>
-                <SongwritingBlog />
+            <p className='represented'>Represented by</p>
+            <div className='represented' style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+                <Clearwave />
                 <div className='songwritingBlog'>
-                    <p>Represented by</p>
                     <a href="https://bmgproductionmusic.com/en-gb/search/tracks?searchTerm=composer:(Hugh%20Webber)" 
                     target="_blank" 
                     rel="noreferrer noopener">

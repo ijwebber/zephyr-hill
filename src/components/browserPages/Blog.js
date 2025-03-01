@@ -38,7 +38,7 @@ function Blog() {
         setError(e.toJSON())
         console.log(error);
       });
-    }, [])
+    }, [error])
 
     return (
         <div className="Blog">
